@@ -1,6 +1,7 @@
 package finalWorkPart1_1;
 
 import finalWorkPart1_1.manager.DriverManager;
+import finalWorkPart1_1.manager.PageManager;
 import finalWorkPart1_1.util.AllureReporter;
 import finalWorkPart1_1.util.TestPropertis;
 import org.junit.jupiter.api.AfterEach;
@@ -11,6 +12,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 public class BaseTest {
     private DriverManager driverManager = DriverManager.getDriverManager();
     private TestPropertis testPropertis = TestPropertis.getTestPropertis();
+    protected PageManager pageManager = PageManager.getPageManager();
 
     @BeforeEach
     public void Before() {
